@@ -19,8 +19,25 @@ Bluetooth accessory polling rate) whenever the app runs in native fullscreen.
 > declared themselves as games — macOS doesn't recognize them as games and never enables
 > Game Mode for them. This tool fills that gap.
 
-> ⚠️ **Disclaimer**: this tool modifies third-party apps' `Info.plist` and re-signs them ad-hoc
-> (fully reversible with one click). Only use it on apps you have the right to modify, at your own risk.
+> ⚠️ **免责声明 / Disclaimer**
+>
+> This project is an **experimental tool built quickly in personal spare time**, not fully
+> tested production software:
+> - **Availability is NOT widely verified**: it was only tested on a single Apple Silicon Mac
+>   (macOS 27) — not across the vast majority of machines, OS versions and app combinations
+> - **Limited coverage**: verified for regular apps (.app bundles), jar/Java programs, and
+>   Minecraft launched via HMCL; other launchers (PCL/Prism etc.) are theoretically possible
+>   but unverified
+> - **Unconventional operations**: modifying third-party apps' Info.plist and re-signing them
+>   is unconventional — App Store apps lose store validation, some security software may
+>   flag it, and some vendors may not support it
+> - **This project is mainly provided as an idea / reference implementation** — how to use
+>   Apple's public `LSSupportsGameMode` declaration mechanism to grant any program Game Mode
+>   eligibility. Improvements are welcome
+>
+> Only use it on software you have the right to modify and have backed up, at your own risk;
+> "Restore default" recovers the original state. Provided for learning and exchange, with no
+> warranties of any kind. Respect the target software's license and local laws.
 
 ## How it works
 
