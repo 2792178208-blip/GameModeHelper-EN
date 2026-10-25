@@ -1,0 +1,19 @@
+# 构建产物
+build/
+GameModeHelper.app/
+*.zip
+*.dmg
+
+# macOS 系统文件
+.DS_Store
+._*
+
+# Xcode / Swift
+xcuserdata/
+*.xcuserstate
+.build/
+Packages/
+
+# 编辑器
+.vscode/
+.idea/
